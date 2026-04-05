@@ -1,33 +1,142 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
 :root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
+  --accent-color: #00d2ff;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
 }
 
 body {
   font-family: 'Jersey 10', cursive;
-  background: var(--bs-gray-dark);
-  color: var(--bs-white);
+  background-color: #0f0f1b;
+  color: white;
+  scroll-behavior: smooth;
+  margin: 0;
+  min-height: 100vh;
+  position: relative; /* Necesario para el fondo */
 }
 
+/* El "Contenedor" del fondo */
+body::before {
+  content: '';
+  position: fixed; /* Se queda quieto al hacer scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Tu imagen de Pixabay */
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+
+  /* EL DESENFOQUE Y DEGRADADO */
+  filter: blur(5px); /* Ajusta el número para más o menos blur */
+  z-index: -1; /* Lo manda al fondo de todo */
+
+  /* Capa de oscuridad para que el texto resalte */
+  mask-image: linear-gradient(to bottom, black 20%, rgba(0, 0, 0, 0.7));
+  -webkit-mask-image: linear-gradient(to bottom, black 20%, rgba(0, 0, 0, 0.7));
+}
+
+/* Capa extra de color para asegurar legibilidad */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 15, 27, 0.4) 0%,
+    rgba(15, 15, 27, 0.9) 100%
+  );
+  z-index: -1;
+}
+
+.jersey-font {
+  font-family: 'Jersey 10', cursive;
+}
+
+/* Navbar con efecto Blur */
+.custom-navbar {
+  background: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+/* Tarjetas de Cristal */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+}
+
+/* Títulos */
 .h2 {
-  font-family: 'jersey 10', cursive;
   font-size: 4rem !important;
+  color: var(--accent-color);
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+}
+
+.main-title {
+  letter-spacing: 5px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Imágenes */
+.border-pixel {
+  border: 4px solid #fff;
+  image-rendering: pixelated; /* Mejora la visualización del pixel art */
+  transition: all 0.4s ease;
+}
+
+.border-pixel:hover {
+  border-color: var(--accent-color);
+  transform: scale(1.02);
+  box-shadow: 0 0 20px var(--accent-color);
+}
+
+/* Icono Formulario */
+.form-icon {
+  width: 100px;
+  filter: drop-shadow(0 0 10px var(--accent-color));
+  transition: transform 0.3s;
+}
+
+.form-icon:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Animaciones */
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px var(--accent-color);
+  }
+  to {
+    text-shadow:
+      0 0 20px #fff,
+      0 0 30px #00d2ff,
+      0 0 40px #00d2ff;
+  }
 }
 
 .txt {
-  font-size: 1.5rem;
-  font-family: 'Jersey 10', cursive;
+  font-size: 1.8rem;
+  color: #ccc;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
 }
