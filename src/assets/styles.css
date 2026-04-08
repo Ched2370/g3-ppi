@@ -155,9 +155,9 @@ body::after {
   color: var(--accent-color) !important;
 }
 
-.logo {
-  width: 16px;
-  height: 16px;
+.navbar img.logo {
+  width: 16px !important;
+  height: 16px !important;
   object-fit: contain;
 }
 
