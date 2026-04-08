@@ -156,8 +156,8 @@ body::after {
 }
 
 .logo {
-  width: 2rem;
-  height: 2rem;
+  width: 16px !important;
+  height: 16px !important;
 }
 
 .card-img-top {
