@@ -154,3 +154,13 @@ body::after {
 .nav-link:hover {
   color: var(--accent-color) !important;
 }
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.card-img-top {
+  height: 200px; /* misma altura para todas */
+  object-fit: cover; /* recorta sin deformar */
+}
