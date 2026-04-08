@@ -155,12 +155,6 @@ body::after {
   color: var(--accent-color) !important;
 }
 
-.navbar img.logo {
-  width: 16px !important;
-  height: 16px !important;
-  object-fit: contain;
-}
-
 .card-img-top {
   height: 200px; /* misma altura para todas */
   object-fit: cover; /* recorta sin deformar */
