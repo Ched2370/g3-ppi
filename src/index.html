@@ -28,7 +28,7 @@
   <body class="bg-dark text-white">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
       <div class="container">
-        <a class="navbar-brand jersey-font" href="#">GRUPO 3</a>
+        <a class="navbar-brand jersey-font fs-2" href="#">GRUPO 3</a>
 
         <button
           class="navbar-toggler"
@@ -44,19 +44,26 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav mx-auto">
-            <a class="nav-link" href="#integrantes">Nosotros</a>
-            <a class="nav-link" href="#que_realizamos">Progreso</a>
-            <a class="nav-link" href="#presentacion">Presentación</a>
-            <a class="nav-link" href="#formulario">Feedback</a>
-            <a class="nav-link" href="#fuentes">Fuentes</a>
+            <a class="nav-link jersey-font fs-3" href="#integrantes"
+              >Nosotros</a
+            >
+            <a class="nav-link jersey-font fs-3" href="#que_realizamos"
+              >Progreso</a
+            >
+            <a class="nav-link jersey-font fs-3" href="#presentacion"
+              >Presentación</a
+            >
+            <a class="nav-link jersey-font fs-3" href="#formulario">Feedback</a>
+            <a class="nav-link jersey-font fs-3" href="#fuentes">Fuentes</a>
           </div>
         </div>
       </div>
     </nav>
 
     <header
-      class="hero-section text-center d-flex align-items-center justify-content-center pt-5"
+      class="hero-section text-center d-flex align-items-center justify-content-center pt-5 mt-lg-5 pt-lg-5 vh-50"
       data-aos="fade-down"
+      id="integrantes"
     >
       <div class="glass-card p-5 mt-5">
         <h1 class="display-1 jersey-font main-title">DESARROLLO WEB</h1>
@@ -65,8 +72,8 @@
     </header>
 
     <main class="container my-5">
-      <section id="integrantes" class="mb-5 pt-5">
-        <h2 class="h2 text-center mb-4 jersey-font">🚀 Integrantes 🚀</h2>
+      <section class="vh-50 m-lg-5">
+        <h2 class="h2 text-center mb-4 mt-lg-5">🚀 Integrantes 🚀</h2>
         <div class="row justify-content-center">
           <div class="col-md-6 glass-card p-4 text-center" data-aos="fade-up">
             <ul class="list-unstyled mb-0">
@@ -80,8 +87,10 @@
         </div>
       </section>
 
-      <section id="que_realizamos" class="mb-5 pt-5">
-        <h2 class="h2 text-center mb-4 jersey-font">📋 Qué realizamos 📋</h2>
+      <section id="que_realizamos" class="mb-lg-5 mt-lg-5 pt-5 min-vh-100">
+        <h2 class="h2 text-center mb-4 jersey-font mt-lg-5">
+          📋 Qué realizamos 📋
+        </h2>
         <div class="row g-4">
           <div class="col-12 col-md-6" data-aos="fade-right">
             <img
@@ -111,102 +120,609 @@
               alt="Paso 4"
             />
           </div>
+          <div class="col-12 col-md-6" data-aos="fade-right">
+            <img
+              src="assets/monday/captura_5.png"
+              class="img-fluid rounded-4 shadow-lg slide-in"
+              alt="Paso 5"
+            />
+          </div>
         </div>
       </section>
 
       <section id="presentacion" class="mb-5 pt-5 text-center">
-        <h2 class="h2 mb-5 jersey-font">🌟 Presentación 🌟</h2>
+        <h2 class="h2 mb-5 jersey-font mt-lg-5">🌟 Presentación 🌟</h2>
         <div class="presentation-grid">
-          <div data-aos="fade-up-right">
+          <div data-aos="fade-up-right" class="min-vh-100">
             <img
               src="assets/diapositivas/diapo_01.png"
               class="img-fluid mb-5 rounded-3 border-pixel"
               alt=""
             />
           </div>
-          <div data-aos="fade-down-left">
-            <img
-              src="assets/diapositivas/diapo_02.png"
-              class="img-fluid mb-5 rounded-3 border-pixel"
-              alt=""
-            />
+        </div>
+        <div data-aos="fade-down-left" class="min-vh-100 mb-lg-5">
+          <img
+            src="assets/diapositivas/diapo_02.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >¿Qué es la web?</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  Es un sistema de documentos interconectados a través de
+                  enlaces, accesibles a través de Internet. Fue inventada por
+                  Tim Berners-Lee en 1989 y ha evolucionado desde sus inicios
+                  como una plataforma de información estática (Web 1.0) hasta
+                  convertirse en un espacio dinámico e interactivo (Web 2.0) y
+                  ahora hacia una web más inteligente y descentralizada (Web
+                  3.0).
+                </div>
+              </div>
+            </div>
           </div>
-          <div data-aos="fade-down-right">
-            <img
-              src="assets/diapositivas/diapo_03.png"
-              class="img-fluid mb-5 rounded-3 border-pixel"
-              alt=""
-            />
+        </div>
+        <div data-aos="fade-down-right" class="min-vh-100 mb-lg-5">
+          <img
+            src="assets/diapositivas/diapo_03.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >¿Qué es w3c y cual es su importancia en el desarrollo web?</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  El World Wide Web Consortium (W3C) es la principal
+                  organización internacional que desarrolla estándares para la
+                  web. Fundada en 1994 por Tim Berners-Lee, el inventor de la
+                  web, el W3C tiene como objetivo garantizar el crecimiento a
+                  largo plazo de la web mediante la creación de protocolos y
+                  pautas que aseguren su interoperabilidad y accesibilidad. El
+                  W3C es crucial para el desarrollo web porque establece las
+                  normas que los desarrolladores deben seguir para crear sitios
+                  y aplicaciones web que funcionen de manera consistente en
+                  diferentes navegadores y dispositivos, promoviendo así una
+                  experiencia de usuario uniforme y accesible para todos. El W3C
+                  también fomenta la innovación y la evolución de la web al
+                  proporcionar un marco para la colaboración entre
+                  desarrolladores, empresas y organizaciones en la creación de
+                  nuevas tecnologías y estándares que impulsen el crecimiento y
+                  la mejora continua de la web. En resumen, el W3C es
+                  fundamental para el desarrollo web porque establece las reglas
+                  del juego, asegurando que la web sea un espacio abierto,
+                  accesible y en constante evolución para todos los usuarios y
+                  desarrolladores.
+                </div>
+              </div>
+            </div>
           </div>
-          <div data-aos="fade-down-left">
-            <img
-              src="assets/diapositivas/diapo_04.png"
-              class="img-fluid mb-5 rounded-3 border-pixel"
-              alt=""
-            />
+        </div>
+        <div data-aos="fade-down-left" class="min-vh-100 mb-lg-5">
+          <img
+            src="assets/diapositivas/diapo_04.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >Etapas de la web</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  Las etapas de la web son: Web 1.0, caracterizada por ser
+                  estática y de solo lectura; Web 2.0, que introdujo la
+                  interactividad y el contenido generado por los usuarios; Web
+                  3.0, enfocada en la inteligencia artificial, la
+                  descentralización y la personalización; y Web 4.0, que se
+                  proyecta como una web completamente integrada con la
+                  inteligencia artificial y la realidad aumentada, ofreciendo
+                  experiencias inmersivas y altamente personalizadas. Cada etapa
+                  representa una evolución en la forma en que interactuamos con
+                  la web, desde una plataforma de información pasiva hasta un
+                  espacio dinámico, inteligente y altamente interactivo que se
+                  adapta a nuestras necesidades y preferencias. Estas etapas
+                  reflejan el crecimiento y la transformación continua de la
+                  web, impulsada por avances tecnológicos y cambios en el
+                  comportamiento de los usuarios, y nos ofrecen una visión del
+                  futuro de la web y su impacto en nuestras vidas digitales. En
+                  resumen, las etapas de la web representan la evolución de la
+                  plataforma digital, desde sus inicios como un espacio estático
+                  hasta convertirse en un entorno dinámico, inteligente y
+                  altamente interactivo que continúa transformándose a medida
+                  que avanzamos hacia el futuro de la tecnología y la
+                  conectividad.
+                </div>
+              </div>
+            </div>
           </div>
-          <div data-aos="fade-up-right">
-            <img
-              src="assets/diapositivas/diapo_05.png"
-              class="img-fluid mb-5 rounded-3 border-pixel"
-              alt=""
-            />
+        </div>
+        <div data-aos="fade-up-right" class="min-vh-100 mb-lg-5">
+          <img
+            src="assets/diapositivas/diapo_05.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >Estructura de una pagina web</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  HTML, CSS, y JavaScript son los pilares fundamentales de la
+                  estructura de una página web. HTML proporciona la estructura y
+                  el contenido, CSS se encarga del diseño y la presentación
+                  visual, mientras que JavaScript añade interactividad y
+                  dinamismo a la página. Juntos, estos lenguajes permiten crear
+                  sitios web atractivos, funcionales y adaptables a diferentes
+                  dispositivos y navegadores, ofreciendo una experiencia de
+                  usuario enriquecedora y personalizada. HTML define la
+                  estructura básica de la página, utilizando etiquetas para
+                  organizar el contenido en encabezados, párrafos, listas,
+                  enlaces, imágenes y otros elementos. CSS se encarga de la
+                  apariencia visual, permitiendo controlar colores, fuentes,
+                  tamaños, márgenes y la disposición de los elementos en la
+                  página. JavaScript añade interactividad, permitiendo crear
+                  efectos dinámicos, validar formularios, manejar eventos y
+                  actualizar el contenido de la página sin necesidad de
+                  recargarla. En resumen, la estructura de una página web se
+                  basa en la combinación de HTML para la estructura, CSS para el
+                  diseño y JavaScript para la interactividad, formando un trío
+                  esencial que permite crear experiencias web atractivas,
+                  funcionales y adaptables a las necesidades de los usuarios en
+                  el entorno digital.
+                </div>
+              </div>
+            </div>
           </div>
-          <div data-aos="flip-up">
-            <img
-              src="assets/diapositivas/diapo_06.png"
-              class="img-fluid mb-5 rounded-3 border-pixel"
-              alt=""
-            />
+        </div>
+        <div data-aos="flip-up" class="min-vh-100 mb-lg-5">
+          <img
+            src="assets/diapositivas/diapo_06.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >¿En qué consiste la web?</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  La web es un sistema de documentos interconectados a través de
+                  enlaces, accesibles a través de Internet. Fue inventada por
+                  Tim Berners-Lee en 1989 y ha evolucionado desde sus inicios
+                  como una plataforma de información estática (Web 1.0) hasta
+                  convertirse en un espacio dinámico e interactivo (Web 2.0) y
+                  ahora hacia una web más inteligente y descentralizada (Web
+                  3.0). La web se basa en tecnologías como HTML, CSS y
+                  JavaScript para crear sitios y aplicaciones que ofrecen una
+                  experiencia de usuario atractiva, funcional y adaptada a
+                  diferentes dispositivos y navegadores. En resumen, la web es
+                  un ecosistema digital en constante evolución que ha
+                  transformado la forma en que accedemos a la información, nos
+                  comunicamos y realizamos actividades en línea, ofreciendo un
+                  espacio abierto, accesible e innovador para usuarios y
+                  desarrolladores por igual. La web es un espacio dinámico y en
+                  constante evolución que ha revolucionado la forma en que
+                  accedemos a la información, nos comunicamos y realizamos
+                  actividades en línea, ofreciendo un espacio abierto, accesible
+                  e innovador para usuarios y desarrolladores por igual. En
+                  resumen, la web es un ecosistema digital que ha transformado
+                  nuestras vidas, permitiéndonos conectarnos, compartir
+                  información y crear experiencias en línea de manera innovadora
+                  y accesible para todos. La web es un espacio dinámico y en
+                  constante evolución que ha revolucionado la forma en que
+                  accedemos a la información, nos comunicamos y realizamos
+                  actividades en línea, ofreciendo un espacio abierto, accesible
+                  e innovador para usuarios y desarrolladores por igual. En
+                  resumen, la web es un ecosistema digital que ha transformado
+                  nuestras vidas, permitiéndonos conectarnos, compartir
+                  información y crear experiencias en línea de manera innovadora
+                  y accesible para todos. La web es un espacio dinámico y en
+                  constante evolución que ha revolucionado la forma en que
+                  accedemos a la información, nos comunicamos y realizamos
+                  actividades en línea, ofreciendo un espacio abierto, accesible
+                  e innovador para usuarios y desarrolladores por igual. En
+                  resumen, la web es un ecosistema digital que ha transformado
+                  nuestras vidas, permitiéndonos conectarnos, compartir
+                  información y crear experiencias en línea de manera innovadora
+                  y accesible para todos. La web es un espacio dinámico y en
+                  constante evolución que ha revolucionado la forma en que
+                  accedemos a la información, nos comunicamos y realizamos
+                  actividades en línea, ofreciendo un espacio abierto, accesible
+                  e innovador para usuarios y desarrolladores por igual. En
+                  resumen, la web es un ecosistema digital que ha transformado
+                  nuestras vidas, permitiéndonos conectarnos, compartir
+                  información y crear experiencias en línea de manera innovadora
+                  y accesible para todos. La web es un espacio dinámico y en
+                  constante evolución que ha revolucion
+                </div>
+              </div>
+            </div>
           </div>
-          <div data-aos="flip-up">
-            <img
-              src="assets/diapositivas/diapo_07.png"
-              class="img-fluid mb-5 rounded-3 border-pixel"
-              alt=""
-            />
+        </div>
+        <div data-aos="flip-up" class="min-vh-100 mb-lg-5">
+          <img
+            src="assets/diapositivas/diapo_07.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >¿Qué hace un desarrollador web?</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  Un profesional que se encarga de diseñar, desarrollar y
+                  mantener sitios web y aplicaciones en línea. Utiliza lenguajes
+                  de programación como HTML, CSS y JavaScript para crear
+                  interfaces atractivas y funcionales, asegurando que los sitios
+                  sean accesibles, rápidos y compatibles con diferentes
+                  dispositivos y navegadores. Además, un desarrollador web puede
+                  especializarse en áreas como el desarrollo front-end, back-end
+                  o full-stack, dependiendo de sus habilidades e intereses.
+                </div>
+              </div>
+            </div>
           </div>
-          <div data-aos="flip-down">
-            <img
-              src="assets/diapositivas/diapo_08.png"
-              class="img-fluid mb-5 rounded-3 border-pixel"
-              alt=""
-            />
+        </div>
+        <div data-aos="flip-down" class="min-vh-100 mb-lg-5">
+          <img
+            src="assets/diapositivas/diapo_08.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >¿Qué hace un desarrollador web?</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  Se encarga de diseñar, desarrollar y mantener sitios web y
+                  aplicaciones en línea. Utiliza lenguajes de programación como
+                  HTML, CSS y JavaScript para crear interfaces atractivas y
+                  funcionales, asegurando que los sitios sean accesibles,
+                  rápidos y compatibles con diferentes dispositivos y
+                  navegadores. Además, un desarrollador web puede especializarse
+                  en áreas como el desarrollo front-end, back-end o full-stack,
+                  dependiendo de sus habilidades e intereses. En resumen, un
+                  desarrollador web es un profesional clave en la creación y
+                  mantenimiento de la presencia en línea de empresas,
+                  organizaciones y proyectos personales, desempeñando un papel
+                  fundamental en la construcción de la web y la experiencia
+                  digital de los usuarios en todo el mundo. Un desarrollador web
+                  es un profesional que se encarga de diseñar, desarrollar y
+                  mantener sitios web y aplicaciones en línea. Utiliza lenguajes
+                  de programación como HTML, CSS y JavaScript para crear
+                  interfaces atractivas y funcionales, asegurando que los sitios
+                  sean accesibles, rápidos y compatibles con diferentes
+                  dispositivos y navegadores. Además, un desarrollador web puede
+                  especializarse en áreas como el desarrollo front-end, back-end
+                  o full-stack, dependiendo de sus habilidades e intereses.
+                </div>
+              </div>
+            </div>
           </div>
-          <div data-aos="zoom-in">
-            <img
-              src="assets/diapositivas/diapo_09.png"
-              class="img-fluid mb-5 rounded-3 border-pixel"
-              alt=""
-            />
+        </div>
+        <div data-aos="zoom-in" class="min-vh-100">
+          <img
+            src="assets/diapositivas/diapo_09.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >¿Qué tipos de desarrolladores web hay?</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  principalmente tres tipos: desarrolladores front-end, que se
+                  enfocan en la parte visual y la experiencia del usuario;
+                  desarrolladores back-end, que trabajan en la lógica del
+                  servidor, bases de datos y la funcionalidad detrás de escena;
+                  y desarrolladores full-stack, que tienen habilidades tanto en
+                  el front-end como en el back-end, permitiéndoles manejar todas
+                  las capas del desarrollo web. Cada tipo de desarrollador
+                  desempeña un papel crucial en la creación de sitios web y
+                  aplicaciones, colaborando para ofrecer experiencias digitales
+                  completas y funcionales a los usuarios.
+                </div>
+              </div>
+            </div>
           </div>
-          <div data-aos="zoom-in-up">
-            <img
-              src="assets/diapositivas/diapo_10.png"
-              class="img-fluid mb-5 rounded-3 border-pixel"
-              alt=""
-            />
+        </div>
+        <div data-aos="zoom-in-up" class="min-vh-100">
+          <img
+            src="assets/diapositivas/diapo_10.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >Desarrollador front-end</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  Es el encargado de diseñar y desarrollar la parte visual de un
+                  sitio web o aplicación, asegurando que los usuarios tengan una
+                  experiencia atractiva, intuitiva y funcional. Utiliza
+                  lenguajes como HTML, CSS y JavaScript para crear interfaces de
+                  usuario que sean accesibles, rápidas y compatibles con
+                  diferentes dispositivos y navegadores. El desarrollador
+                  front-end trabaja en estrecha colaboración con diseñadores y
+                  desarrolladores back-end para garantizar que el producto final
+                  sea coherente, eficiente y cumpla con las expectativas de los
+                  usuarios.
+                </div>
+              </div>
+            </div>
           </div>
-          <div data-aos="zoom-in-down">
-            <img
-              src="assets/diapositivas/diapo_11.png"
-              class="img-fluid mb-5 rounded-3 border-pixel"
-              alt=""
-            />
+        </div>
+        <div data-aos="zoom-in-down" class="min-vh-100">
+          <img
+            src="assets/diapositivas/diapo_11.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >Desarrollador back-end</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  Es el encargado de desarrollar y mantener la lógica del
+                  servidor, bases de datos y la funcionalidad detrás de escena
+                  en un sitio web o aplicación. Utiliza lenguajes como Python,
+                  Java, PHP, Node.js, entre otros, para crear APIs, gestionar la
+                  seguridad y optimizar el rendimiento del sistema. El
+                  desarrollador back-end trabaja en estrecha colaboración con
+                  desarrolladores front-end para garantizar que el producto
+                  final sea coherente, eficiente y cumpla con las expectativas
+                  de los usuarios.
+                </div>
+              </div>
+            </div>
           </div>
-          <div data-aos="zoom-in-left">
+        </div>
+        <div data-aos="zoom-in-left" class="min-vh-100">
+          <img
+            src="assets/diapositivas/diapo_12.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >Desarrollador Full Stack</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  Es un profesional que tiene habilidades tanto en el desarrollo
+                  front-end como en el back-end, lo que le permite manejar todas
+                  las capas del desarrollo web. Un desarrollador full stack es
+                  capaz de diseñar y desarrollar la parte visual de un sitio web
+                  o aplicación, así como gestionar la lógica del servidor, bases
+                  de datos y la funcionalidad detrás de escena. Esta
+                  versatilidad le permite trabajar en proyectos completos, desde
+                  la concepción hasta la implementación, ofreciendo una
+                  experiencia digital completa y funcional a los usuarios. En
+                  resumen, un desarrollador full stack es un profesional clave
+                  en la creación y mantenimiento de sitios web y aplicaciones,
+                  desempeñando un papel fundamental en la construcción de la web
+                  y la experiencia digital de los usuarios en todo el mundo,
+                  gracias a su capacidad para manejar tanto el front-end como el
+                  back-end de manera eficiente y efectiva. Un desarrollador full
+                  stack es un profesional que tiene habilidades tanto en el
+                  desarrollo front-end como en el back-end, lo que le permite
+                  manejar todas las capas del desarrollo web. Un desarrollador
+                  full stack es capaz de diseñar y desarrollar la parte visual
+                  de un sitio web o aplicación, así como gestionar la lógica del
+                  servidor, bases de datos y la funcionalidad detrás de escena.
+                  Esta versatilidad le permite trabajar en proyectos completos,
+                  desde la concepción hasta la implementación, ofreciendo una
+                  experiencia digital completa y funcional a los usuarios.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-left" class="min-vh-100 mb-lg-5">
+          <img
+            src="assets/diapositivas/diapo_13.png"
+            class="img-fluid mb-5 rounded-3 border-pixel"
+            alt=""
+          />
+          <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary jersey-font fs-3"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+              >¿Qué herramientas se utilizan en el desarrollo web?</a
+            >
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-black jersey-font fs-3">
+                  Las herramientas utilizadas en el desarrollo web incluyen
+                  editores de código como Visual Studio Code, Sublime Text o
+                  Atom; sistemas de control de versiones como Git y plataformas
+                  como GitHub o GitLab; frameworks y bibliotecas como React,
+                  Angular, Vue.js para el front-end, y Node.js, Django, Ruby on
+                  Rails para el back-end; así como herramientas de diseño como
+                  Figma o Adobe XD. Estas herramientas facilitan la creación,
+                  colaboración y gestión de proyectos web, permitiendo a los
+                  desarrolladores construir sitios y aplicaciones eficientes,
+                  funcionales y atractivas para los usuarios. En resumen, las
+                  herramientas utilizadas en el desarrollo web son esenciales
+                  para el proceso de creación y mantenimiento de sitios web y
+                  aplicaciones, proporcionando a los desarrolladores los
+                  recursos necesarios para diseñar, codificar, colaborar y
+                  gestionar proyectos de manera efectiva en el entorno digital.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-left" class="min-vh-100 mt-lg-5">
             <img
-              src="assets/diapositivas/diapo_12.png"
+              src="assets/diapositivas/diapo_14.png"
               class="img-fluid mb-5 rounded-3 border-pixel"
               alt=""
             />
+            <p class="d-inline-flex gap-1">
+              <a
+                class="btn btn-primary jersey-font fs-3"
+                data-bs-toggle="collapse"
+                href="#multiCollapseExample1"
+                role="button"
+                aria-expanded="false"
+                aria-controls="multiCollapseExample1"
+                >En conclusión</a
+              >
+            </p>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                  <div class="card card-body bg-black jersey-font fs-3">
+                    La Web ha pasado de ser un conjunto de documentos estáticos
+                    (Web 1.0) a una red social participativa (Web 2.0) y ahora
+                    se encamina hacia la descentralización y la inteligencia
+                    (Web 3.0). El desafío para los desarrolladores de hoy no es
+                    solo construir sitios rápidos, sino asegurar una web
+                    accesible, segura y ética para las futuras generaciones.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-lg-5 text-center vh-100 justify-content-center d-flex flex-column"
+        >
+          <div class="glass-card d-inline-block p-lg-5 mt-4" data-aos="fade-up">
+            <p class="jersey-font fs-1">
+              "La Web tal como la conocemos es solo la punta del iceberg...
+              <br />El potencial de lo que podemos construir sobre ella es
+              infinito".
+
+              <br />
+              <span class="fw-bold text-end">Tim Berners-Lee</span>
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="formulario" class="py-5 text-center">
-        <h2 class="h2 mb-3 jersey-font">🗣️ Feedback 🗣️</h2>
-        <div class="glass-card d-inline-block p-4">
+      <section
+        id="formulario"
+        class="pt-lg-5 text-center vh-100 justify-content-center d-flex flex-column"
+      >
+        <h2 class="h2 jersey-font">🗣️ Feedback 🗣️</h2>
+        <div class="glass-card w-25 p-4 mt-4 mx-auto">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSeiwhWhIZ5PtdCKMlRbi-aNjcDEM37YbiPfAU0oK4pG0mC53Q/viewform"
             target="_blank"
@@ -218,9 +734,33 @@
         </div>
       </section>
 
-      <section id="fuentes" class="mb-5 pt-5 text-center">
+      <section id="fuentes" class="mb-5 pt-5 text-center mt-lg-5">
         <h2 class="h2 mb-5 jersey-font">⛲ Fuentes ⛲</h2>
         <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <a
+                href="https://es.wikipedia.org/wiki/Tim_Berners-Lee"
+                target="_blank"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/LS3_4919_%28cropped%29.jpg/250px-LS3_4919_%28cropped%29.jpg"
+                  class="card-img-top"
+                  alt="W3C"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title h3 jersey-font">Tim Berners-Lee</h5>
+                <p class="card-text jersey-font fs-4">
+                  Sir Timothy John Berners-Lee, conocido como Tim Berners-Lee,
+                  es un ingeniero informático británico reconocido mundialmente
+                  por ser el inventor de la World Wide Web. Nacido en 1955, su
+                  visión y trabajo han revolucionado la forma en que accedemos a
+                  la información y nos comunicamos en la era digital.
+                </p>
+              </div>
+            </div>
+          </div>
           <div class="col">
             <div class="card">
               <a
