@@ -156,8 +156,9 @@ body::after {
 }
 
 .logo {
-  width: 16px !important;
-  height: 16px !important;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 .card-img-top {
