@@ -159,3 +159,29 @@ body::after {
   height: 200px; /* misma altura para todas */
   object-fit: cover; /* recorta sin deformar */
 }
+
+/* ultimo retoque */
+
+.img-galeria {
+  width: 100%;
+  /* Definimos la altura fija para que todas sean hermanas gemelas */
+  height: 350px;
+  /* 'cover' es el truco mágico: llena el espacio sin deformar */
+  object-fit: cover;
+  /* Asegura que el centro de la captura sea lo que se vea */
+  object-position: center;
+  display: block;
+}
+
+/* Opcional: un efecto suave al pasar el mouse para que se sienta vivo */
+.img-galeria:hover {
+  filter: brightness(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Ajuste para celulares: que sean un poco más bajas para que no ocupen toda la pantalla */
+@media (max-width: 768px) {
+  .img-galeria {
+    height: 250px;
+  }
+}
